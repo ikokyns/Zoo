@@ -1,4 +1,17 @@
 <div>
+
+	<div>
+		<div>
+			<label>Species:</label>
+			<input [(ngModel)]="newAnimal.species"/>
+			<label>Name:</label>
+			<input [(ngModel)]="newAnimal.name"/>
+			<label>Date of birth:</label>
+			<input [(ngModel)]="newAnimal.dateOfBirth"/>
+			<button (click)="addAnimal()">Add animal</button>
+		</div>
+	</div>
+
 	<h1>Animals</h1>
 	
 	<table class="animaltable">
