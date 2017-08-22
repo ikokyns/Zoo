@@ -1,0 +1,17 @@
+<div>
+	<h1>Animals</h1>
+	
+	<table class="animaltable">
+		<tr>
+			<th>Species</th>
+			<th>Name</th>
+			<th>Birth Date</th>
+		</tr>
+		<tr *ngFor="let animal of animals">
+			<td> {{ animal.species }} </td>
+			<td> {{ animal.name }} </td>
+			<td> {{ animal.birthDate }} </td>
+		</tr>
+	</table>
+	
+</div>
