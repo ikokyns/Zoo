@@ -14,4 +14,10 @@ export class AnimalComponent {
 	  { species: 'Ape', name: 'Dora', birthDate: '06052011' },
 	  { species: 'Snake', name: 'Hans', birthDate: '11121983' },
 	];
+	removeAnimal (animal){
+
+		var i = this.animals.indexOf(animal);
+
+		this.animals.splice(i, 1);
+	}
 }
