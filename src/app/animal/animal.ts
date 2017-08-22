@@ -7,7 +7,7 @@ export class Animal {
 	sector: Sector;
 
 
-	constructor (species, name, dateOfBirth, sector){
+	constructor (species, name, dateOfBirth, sector?){
 		this.species = species,
 		this.name = name,
 		this.dateOfBirth = dateOfBirth,

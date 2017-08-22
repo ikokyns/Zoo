@@ -13,6 +13,12 @@ export class AnimalComponent {
 	
 	newAnimal = new Animal('', '', '', '');
 
+	sectors = [
+		new Sector('Blue', 'wather'),
+		new Sector('Green', 'grass'),
+		new Sector('Yellow', 'sand')
+	]
+
 	animals = [
 		new Animal('Horse', 'Silver', '12052015', ''),
 		new Animal('Sheep', 'Magy', '10071995', ''),
@@ -38,11 +44,5 @@ export class AnimalComponent {
 		this.animals.push(this.newAnimal);
 		this.newAnimal = new Animal('', '', '', '');
 	}
-
-	sectors = [
-		new Sector('Blue', 'wather'),
-		new Sector('Green', 'grass'),
-		new Sector('Yellow', 'sand')
-	]
 
 }
