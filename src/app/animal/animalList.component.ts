@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Animal } from './animal'
 
 @Component({
   selector: 'app-animal-list',
@@ -7,17 +8,22 @@ import { Component } from '@angular/core';
 })
 
 export class AnimalComponent {
-	private animals: any[] = [
-	  { species: 'Horse', name: 'Silver', birthDate: '' },
-	  { species: 'Sheep', name: 'Magy', birthDate: '10071995' },
-	  { species: 'Hipo', name: 'Lipo', birthDate: '02052000' },
-	  { species: 'Ape', name: 'Dora', birthDate: '06052011' },
-	  { species: 'Snake', name: 'Hans', birthDate: '11121983' },
+	animals = [
+	new Animal('Horse', 'Silver', '12052015'),
+	new Animal('Sheep', 'Magy', '10071995'),
+	new Animal('Ape', 'Dora', '06052011'),
+	new Animal('Snake', 'Hans', '11121983'),
 	];
+
 	removeAnimal (animal){
 
 		var i = this.animals.indexOf(animal);
 
 		this.animals.splice(i, 1);
+	}
+
+	moveToTop (animal){
+
+		
 	}
 }

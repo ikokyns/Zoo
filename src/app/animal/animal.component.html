@@ -7,13 +7,15 @@
 			<th>Name</th>
 			<th>Birth Date</th>
 			<th>Remove animal</th>
+			<th>Move to top</th>
 		</tr>
 		<tr *ngFor="let animal of animals">
 			<td> {{ animal.species }} </td>
 			<td> {{ animal.name }} </td>
-			<td *ngIf="!animal.birthDate"> Nepoznat </td>
-			<td *ngIf="animal.birthDate" > {{ animal.birthDate }} </td>
+			<td *ngIf="!animal.dateOfBirth"> Nepoznat </td>
+			<td *ngIf="animal.dateOfBirth" > {{ animal.dateOfBirth }} </td>
 			<td><a (click)="removeAnimal(animal)">Remove</a></td>
+			<td><a (click)="moveToTop(animal)">Move to top</a></td>
 		</tr>
 
 	</table>
