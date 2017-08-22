@@ -24,6 +24,8 @@ export class AnimalComponent {
 
 	moveToTop (animal){
 
-		
+		this.animals.pop();
+		this.animals.unshift(animal);
+
 	}
 }
