@@ -10,7 +10,8 @@
 		<tr *ngFor="let animal of animals">
 			<td> {{ animal.species }} </td>
 			<td> {{ animal.name }} </td>
-			<td> {{ animal.birthDate }} </td>
+			<td *ngIf="!animal.birthDate"> Nepoznat </td>
+			<td *ngIf="animal.birthDate" > {{ animal.birthDate }} </td>
 		</tr>
 	</table>
 	

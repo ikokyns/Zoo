@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class AnimalComponent {
 	private animals: any[] = [
-	  { species: 'Horse', name: 'Silver', birthDate: '12101980' },
+	  { species: 'Horse', name: 'Silver', birthDate: '' },
 	  { species: 'Sheep', name: 'Magy', birthDate: '10071995' },
 	  { species: 'Hipo', name: 'Lipo', birthDate: '02052000' },
 	  { species: 'Ape', name: 'Dora', birthDate: '06052011' },
